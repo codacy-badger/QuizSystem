@@ -1,0 +1,12 @@
+language: java
+jdk: openjdk8
+before_install: mvn install:install-file -DgroupId=oracle.jdbc.OracleDriver -DartifactId=ojdbc6 -Dversion=11.2.0.4.0 -Dpackaging=jar -Dfile=ojdbc6.jar -DgeneratePom=true
+
+
+cache:
+  directories:
+  - $HOME/.m2
+
+branches:
+  only:
+  - master
