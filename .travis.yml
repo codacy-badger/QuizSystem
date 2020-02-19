@@ -7,3 +7,7 @@ before_install: mvn install:install-file -DgroupId=oracle.jdbc.OracleDriver -Dar
 cache:
   directories:
     - $HOME/.m2
+
+branches:
+  only:
+    - master
